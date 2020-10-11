@@ -1,4 +1,4 @@
-from flask import Blueprint, request, redirect
+from flask import Blueprint, request, redirect, render_template
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm.exc import NoResultFound
 import re, random
@@ -48,7 +48,8 @@ def redirect_url(slug):
 	try:
 		long_url = Urls.query.filter_by(shorten = slug).first()
 		if not long_url:
-			return "Haha Working !!"
+			# return "Haha Working !!"
+			return render_template('invalid.html'), 404
 		long_url = long_url.url
 	except NoResultFound as e:
 		pass
