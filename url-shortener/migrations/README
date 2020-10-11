@@ -1,0 +1,9 @@
+Generic single-database configuration.
+
+STEPS to setup : 
+flask  db init
+flask db migrate -m "Initial migration."
+flask db upgrade
+
+To run the application:
+
