@@ -3,12 +3,10 @@ from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm.exc import NoResultFound
 import re, random
 import hashlib
-# from app import app
 from .models import Urls, db
 
 
 short_url = Blueprint('short_url', __name__,)
-# app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///urls.sqlite3'
 
 rndlam = lambda str : random.choice(str) if random.choice('10') == 1 else random.choice(str).upper()
 
