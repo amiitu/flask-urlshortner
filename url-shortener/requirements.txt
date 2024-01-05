@@ -5,7 +5,7 @@ click==7.1.1
 colour==0.1.5
 dominate==2.5.1
 duo-web==1.3.0
-Flask==1.1.1
+Flask==2.2.5
 Flask-Bootstrap==3.3.7.1
 Flask-Migrate==2.5.3
 Flask-SQLAlchemy==2.4.1
